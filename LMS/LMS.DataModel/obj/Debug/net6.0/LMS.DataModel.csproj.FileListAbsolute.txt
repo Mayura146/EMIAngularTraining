@@ -1,0 +1,14 @@
+C:\EMIAngularTraining\LMS\LMS.DataModel\bin\Debug\net6.0\LMS.DataModel.deps.json
+C:\EMIAngularTraining\LMS\LMS.DataModel\bin\Debug\net6.0\LMS.DataModel.runtimeconfig.json
+C:\EMIAngularTraining\LMS\LMS.DataModel\bin\Debug\net6.0\LMS.DataModel.dll
+C:\EMIAngularTraining\LMS\LMS.DataModel\bin\Debug\net6.0\ref\LMS.DataModel.dll
+C:\EMIAngularTraining\LMS\LMS.DataModel\bin\Debug\net6.0\LMS.DataModel.pdb
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.csproj.AssemblyReference.cache
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.AssemblyInfoInputs.cache
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.AssemblyInfo.cs
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.csproj.CoreCompileInputs.cache
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.dll
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\ref\LMS.DataModel.dll
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.pdb
+C:\EMIAngularTraining\LMS\LMS.DataModel\obj\Debug\net6.0\LMS.DataModel.genruntimeconfig.cache

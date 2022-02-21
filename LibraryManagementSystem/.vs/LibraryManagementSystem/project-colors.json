@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8361e2ff-3a97-44a9-9786-e9d45541e642": {
+      "ProjectGuid": "8361e2ff-3a97-44a9-9786-e9d45541e642",
+      "DisplayName": "LibraryManagementSystem",
+      "ColorIndex": 0
+    },
+    "2ce9330f-fc83-4549-bbf9-0fc20762475f": {
+      "ProjectGuid": "2ce9330f-fc83-4549-bbf9-0fc20762475f",
+      "DisplayName": "LibraryManagementSystem.DataModels",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

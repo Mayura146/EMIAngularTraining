@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3d6f42c2-2e68-4704-a47f-c05ea50a2fcc": {
+      "ProjectGuid": "3d6f42c2-2e68-4704-a47f-c05ea50a2fcc",
+      "DisplayName": "LMS.ServiceModel",
+      "ColorIndex": 0
+    },
+    "22de782a-b1f6-42c0-9209-440cef1ae5f3": {
+      "ProjectGuid": "22de782a-b1f6-42c0-9209-440cef1ae5f3",
+      "DisplayName": "LMS.API",
+      "ColorIndex": 1
+    },
+    "50b2a0e9-5e5f-48ca-a679-c29d5c6c6793": {
+      "ProjectGuid": "50b2a0e9-5e5f-48ca-a679-c29d5c6c6793",
+      "DisplayName": "LMS.DataModel",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
