@@ -8,7 +8,7 @@ import { ChildComponent } from './child/child.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { RatingComponent } from './rating/rating.component';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+
 import { StoredRecordsComponent } from './stored-records/stored-records.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import {FormsModule} from '@angular/forms';
@@ -19,8 +19,6 @@ import {FormsModule} from '@angular/forms';
     ChildComponent,
     EmployeeComponent,
     RatingComponent,
-    CreateEmployeeComponent,
-    StoredRecordsComponent,
     ListEmployeeComponent
   ],
   imports: [
