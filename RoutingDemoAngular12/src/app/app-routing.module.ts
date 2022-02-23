@@ -8,7 +8,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'/home',pathMatch: 'full'},
+  {path:'', redirectTo:'/home',pathMatch: 'full'},// signifies that complete URL path requires to be matched.
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'employees', component: EmployeesComponent},
@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: '**', component: PageNotFoundComponent}
 ];
 
+// 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

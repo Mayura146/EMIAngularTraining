@@ -1,1 +1,13 @@
-<p>employees works!</p>
+<div class="row">
+    <div class="col-sm-4" *ngFor="let employee of Employees">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{employee.id}}</h5>
+                <p class="card-text">{{employee.name}}</p>
+                <p class="card-text">{{employee.location}}</p>
+                <a [routerLink]="['employee-detail/:id', employee.id]" class="btn btn-danger">Employee Detail</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--RouterLink is an inbuilt Angular Directive that lets you link to specific routes in your app.-->
