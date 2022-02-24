@@ -16,19 +16,20 @@ alertMessage: 'Invalid Credentials!!';
   ngOnInit(): void {
   }
 
-  public userLogin()
+  public userLogin():any
   {
-    this.userName=((document.getElementById('userName') as HTMLInputElement).value);
-    this.password=((document.getElementById('password') as HTMLInputElement).value);
+   console.log(this.userName);
+   console.log(this.password);
     const result=this.service.authenticateUser(this.userName,this.password);
     if(result===true)
     {
-      this.router.navigate(['home']);
+      this.router.navigate(['about']);
     }
 
     else
     {
       this.router.navigate(['customer']);
+      return this.alertMessage;
     }
   }
 }

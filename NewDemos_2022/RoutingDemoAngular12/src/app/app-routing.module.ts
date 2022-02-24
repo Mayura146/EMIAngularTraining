@@ -12,6 +12,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { RoutParameterComponent } from './Components/rout-parameter/rout-parameter.component';
+import { SwitchComponent } from './Components/switch/switch.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home',pathMatch: 'full'},// signifies that complete URL path requires to be matched.
@@ -31,6 +32,7 @@ const routes: Routes = [
     
   ]},
   {path: 'login', component: LoginComponent},
+  {path:'switch',component:SwitchComponent},
   {path: 'customer',redirectTo: '/customer', pathMatch:'full'},
   {path:'route/:id', component: RoutParameterComponent},
   {path: '**', component: PageNotFoundComponent}

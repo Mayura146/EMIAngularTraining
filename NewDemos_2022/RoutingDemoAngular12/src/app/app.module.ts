@@ -17,6 +17,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AddCustomerComponent } from './Components/add-customer/add-customer.component';
 import { MenuComponent } from './Components/menu/menu.component';
+import { SwitchComponent } from './Components/switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MenuComponent } from './Components/menu/menu.component';
     LoginComponent,
  
     AddCustomerComponent,
-    MenuComponent
+    MenuComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,

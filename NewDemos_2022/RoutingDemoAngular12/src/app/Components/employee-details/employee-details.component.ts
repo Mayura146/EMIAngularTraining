@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @Component({
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeDetailsComponent implements OnInit {
 id: number;
-  constructor() { }
+  constructor(private activate: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activate.paramMap.subscribe((p:ParamMap)=>{
+      this.id =+ this.activate.snapshot.paramMap.get('id');
+    })
   }
 
 }
