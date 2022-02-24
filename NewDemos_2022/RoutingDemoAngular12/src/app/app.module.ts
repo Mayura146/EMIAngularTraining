@@ -15,6 +15,9 @@ import { EditCustomerComponent } from './Components/edit-customer/edit-customer.
 import { RoutParameterComponent } from './Components/rout-parameter/rout-parameter.component';
 import { LoginComponent } from './Components/login/login.component';
 
+import { AddCustomerComponent } from './Components/add-customer/add-customer.component';
+import { MenuComponent } from './Components/menu/menu.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,10 @@ import { LoginComponent } from './Components/login/login.component';
     CustomerDetailsComponent,
     EditCustomerComponent,
     RoutParameterComponent,
-    LoginComponent
+    LoginComponent,
+    AddComponentComponent,
+    AddCustomerComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

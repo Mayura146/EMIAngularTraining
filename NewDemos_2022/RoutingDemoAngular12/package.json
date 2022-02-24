@@ -8,12 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "styles":[
+  "styles": [
     "node_modules/bootstrap/dist/css/bootstrap.min.css"
-   
-  ]
-
-  ,
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.2.0",
