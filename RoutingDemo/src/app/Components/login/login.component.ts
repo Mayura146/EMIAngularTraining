@@ -17,8 +17,8 @@ alertmessage='Invalid Credentials!!';
   }
 
   public UserLogin() {
-    // this.username = ((document.getElementById('username') as HTMLInputElement).value);
-    // this.password = ((document.getElementById('password') as HTMLInputElement).value);
+    this.username = ((document.getElementById('username') as HTMLInputElement).value);
+     this.password = ((document.getElementById('password') as HTMLInputElement).value);
     console.log(this.username);
     console.log(this.password);
     const result=this.service.authenticateuser(this.username,this.password);
