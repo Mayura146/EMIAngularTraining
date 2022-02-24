@@ -1,1 +1,15 @@
-<p>login works!</p>
+<h3>Login Page</h3>
+<div class="container">
+    <div class="row">
+        <label>UserName</label>
+        <input type="text"  id="username" [(ngModel)]="userName">
+    </div>
+
+    <div class="row">
+        <label>Password</label>
+        <input type="password"  id="password" [(ngModel)]="password">
+    </div>
+    
+    <button type="button" (click)="userLogin()">Login</button>
+</div>
+<span>{{alertMessage}}</span>

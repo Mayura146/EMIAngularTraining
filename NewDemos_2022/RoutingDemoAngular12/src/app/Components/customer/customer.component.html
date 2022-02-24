@@ -1,1 +1,9 @@
-<p>customer works!</p>
+<input type="text" [(ngModel)]="empId">
+<button type="button" (click)="redirect()">Got to Router</button>
+
+<nav class="nav justify-content-left">
+    <a class="nav-link active" [routerLink]="['details',1]">Customer Details</a>
+    <a class="nav-link" routerLink="add">Add Customer</a>
+    <a class="nav-link" [routerLink]="['edit',1]">Edit Customer</a>
+</nav>
+<router-outlet></router-outlet>

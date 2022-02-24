@@ -18,8 +18,8 @@ alertMessage: 'Invalid Credentials!!';
 
   public userLogin()
   {
-    // this.userName=((document.getElementById('userName') as HTMLInputElement).value);
-    // this.password=((document.getElementById('password') as HTMLInputElement).value);
+    this.userName=((document.getElementById('userName') as HTMLInputElement).value);
+    this.password=((document.getElementById('password') as HTMLInputElement).value);
     const result=this.service.authenticateUser(this.userName,this.password);
     if(result===true)
     {
@@ -28,7 +28,7 @@ alertMessage: 'Invalid Credentials!!';
 
     else
     {
-      this.router.navigate(['customer'])
+      this.router.navigate(['customer']);
     }
   }
 }
