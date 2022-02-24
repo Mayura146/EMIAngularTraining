@@ -19,9 +19,9 @@ Location: string;
     // this.activate.params.subscribe((p) => {
     //   this.ID = +p.id;
 
-  //   this.activate.paramMap.subscribe((p: ParamMap) => {
-  // this.ID = +p.get('id');
-  //   });
+    this.activate.paramMap.subscribe((p: ParamMap) => {
+  this.ID = +p.get('id');
+    });
 
   this.ID = +this.activate.snapshot.paramMap.get('id');
   }
