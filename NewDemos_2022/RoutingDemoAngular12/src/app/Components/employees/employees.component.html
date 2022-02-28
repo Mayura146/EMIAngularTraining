@@ -1,13 +1,47 @@
-<div class="row">
-    <div class="col-sm-4" *ngFor="let employee of Employees">
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">{{employee.id}}</h5>
-                <p class="card-text">{{employee.name}}</p>
-                <p class="card-text">{{employee.location}}</p>
-                <a [routerLink]="['employee-detail/:id', employee.id]" class="btn btn-danger">Employee Detail</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--RouterLink is an inbuilt Angular Directive that lets you link to specific routes in your app.-->
+
+<h2 style="color: darkblue;">Employee Component</h2>
+<p style="font-weight: 800;">Built in Pipe</p>
+Currency:{{56789|currency:'Rs.'}} <br/>
+Percentage:{{0.566789|percent}}
+Slice:{{months|slice :2:6}}<br/>
+Date Pipe:{{todaydate|date:'d/M/y'}}<br/>
+jsonValue:{{jsonvalue|json}}
+
+<br/><br/>
+<h4 style="color: blueviolet;">Employee Details</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name </th>
+            <th>Employee Location</th>
+            <th>Gender</th>
+            <th>IsEmployed</th>
+            <th>Operation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of details">
+            <td>{{employee.id}}</td>
+             <td>{{employee.name|uppercase|initial:employee.Gender}}</td>
+             <td>{{employee.location|titlecase}}</td>
+             <td>{{employee.Gender}}</td>
+             <td>{{employee.isActive?'YES':'NO'}}</td>
+                     <td><a [routerLink]="['edit',employee.id]">Edit</a></td>
+        </tr>
+    </tbody>
+    </table>
+
+    <input type="text" [(ngModel)]="empid">
+<button type="button" (click)="redirect()">Go to router</button>
+
+<nav class="nav justify-content-left">
+    <a class="nav-link active" [routerLink]="['details',1]">Employee Details</a>
+    <a class="nav-link" routerLink='add'>Add Employee</a>
+    <a class="nav-link" [routerLink]="['edit',1]">Edit Employee</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <button type="button" (click)="getQueryParamData()">Get Data</button>
+  Employee Id:{{ID}}
+  EmployeeName: {{Name}}
+  Location:{{Location}}

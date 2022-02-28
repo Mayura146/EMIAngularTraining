@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './Components/about/about.component';
 import { AddCustomerComponent } from './Components/add-customer/add-customer.component';
+import { AddEmployeeComponent } from './Components/add-employee/add-employee.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { CustomerDetailsComponent } from './Components/customer-details/customer-details.component';
 import { CustomerComponent } from './Components/customer/customer.component';
 import { EditCustomerComponent } from './Components/edit-customer/edit-customer.component';
+import { EditEmployeeDetailsComponent } from './Components/edit-employee-details/edit-employee-details.component';
 import { EmployeeDetailsComponent } from './Components/employee-details/employee-details.component';
 import { EmployeesComponent } from './Components/employees/employees.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -18,7 +20,13 @@ const routes: Routes = [
   {path:'', redirectTo:'/home',pathMatch: 'full'},// signifies that complete URL path requires to be matched.
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'employees', component: EmployeesComponent},
+  {path: 'employees', component: EmployeesComponent,children:[
+    {path: 'employee-detail/:id', component:EmployeeDetailsComponent},
+    
+      {path: 'add', component: AddEmployeeComponent},
+      {path: 'edit/:id', component: EditEmployeeDetailsComponent}
+    
+  ]},
   {path: 'employee-detail/:id', component:EmployeeDetailsComponent},
   {path: 'contact',component:ContactComponent},
   {path: 'customer',component: CustomerComponent, children:[
