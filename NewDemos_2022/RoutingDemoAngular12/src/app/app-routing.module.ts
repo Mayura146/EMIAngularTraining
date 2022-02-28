@@ -43,6 +43,8 @@ const routes: Routes = [
   {path:'switch',component:SwitchComponent},
   {path: 'customer',redirectTo: '/customer', pathMatch:'full'},
   {path:'route/:id', component: RoutParameterComponent},
+  {path: 'product',loadChildren: () => import('./FeatureModule/Product/products/products.module')
+.then(m=>m.ProductsModule)},
   {path: '**', component: PageNotFoundComponent}
 ];
 
