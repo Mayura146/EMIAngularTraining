@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthenticationService {
+  constructor() { }
   public authenticateUser(username: string,password: string)
   {
      if(username==='admin' && password==='admin123')
@@ -18,8 +19,11 @@ export class AuthenticationService {
        return false;
      }
   }
-
-  constructor() { }
+  ischildRights():boolean
+  {
+    return true;
+  }
+ 
 
 
 }

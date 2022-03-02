@@ -20,7 +20,7 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { SwitchComponent } from './Components/switch/switch.component';
 import { AddEmployeeComponent } from './Components/add-employee/add-employee.component';
 import { EditEmployeeDetailsComponent } from './Components/edit-employee-details/edit-employee-details.component';
-import { InitialPipe } from './SharedModule/initial.pipe';
+
 
 
 @NgModule({

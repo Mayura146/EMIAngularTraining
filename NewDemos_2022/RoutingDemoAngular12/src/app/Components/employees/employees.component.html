@@ -23,7 +23,7 @@ jsonValue:{{jsonvalue|json}}
     <tbody>
         <tr *ngFor="let employee of details">
             <td>{{employee.id}}</td>
-             <td>{{employee.name|uppercase|initial:employee.Gender}}</td>
+             <td>{{employee.name|uppercase}}</td>
              <td>{{employee.location|titlecase}}</td>
              <td>{{employee.Gender}}</td>
              <td>{{employee.isActive?'YES':'NO'}}</td>
