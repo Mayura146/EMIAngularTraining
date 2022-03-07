@@ -15,32 +15,26 @@ import { LoginComponent } from './Components/login/login.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { RoutParameterComponent } from './Components/rout-parameter/rout-parameter.component';
 import { SwitchComponent } from './Components/switch/switch.component';
+import { AdminGuard } from './RouteGuards/admin.guard';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home',pathMatch: 'full'},// signifies that complete URL path requires to be matched.
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'employees', component: EmployeesComponent,children:[
-    {path: 'employee-detail/:id', component:EmployeeDetailsComponent},
-    
-      {path: 'add', component: AddEmployeeComponent},
-      {path: 'edit/:id', component: EditEmployeeDetailsComponent}
-    
+  {path: 'employees', component: EmployeesComponent,canActivateChild:[AdminGuard],children:[
+  {path: 'employee-detail/:id', component:EmployeeDetailsComponent},
+  {path: 'add', component: AddEmployeeComponent},
+  {path: 'edit/:id', component: EditEmployeeDetailsComponent}
   ]},
   {path: 'employee-detail/:id', component:EmployeeDetailsComponent},
-  {path: 'contact',component:ContactComponent},
+  {path: 'contact',component:ContactComponent,canActivate:[AdminGuard]},
   {path: 'customer',component: CustomerComponent, children:[
-
-    {
-      path: 'add',component: AddCustomerComponent
-    },
-
-    { path: 'edit/:id' ,component: EditCustomerComponent},
-    {path: 'details/:id',component: CustomerDetailsComponent},
-    
+  {path: 'add',component: AddCustomerComponent},
+  { path: 'edit/:id' ,component: EditCustomerComponent},
+  {path: 'details/:id',component: CustomerDetailsComponent},
   ]},
   {path: 'login', component: LoginComponent},
-  {path:'switch',component:SwitchComponent},
+  {path:'switch',component:SwitchComponent,canActivate:[AdminGuard]},
   {path: 'customer',redirectTo: '/customer', pathMatch:'full'},
   {path:'route/:id', component: RoutParameterComponent},
   {path: 'product',loadChildren: () => import('./FeatureModule/Product/products/products.module')

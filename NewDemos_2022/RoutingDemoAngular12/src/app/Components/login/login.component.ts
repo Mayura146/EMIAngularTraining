@@ -10,26 +10,30 @@ import { AuthenticationService } from 'src/app/Services/authentication.service';
 export class LoginComponent implements OnInit {
 userName: string;
 password: string;
-alertMessage: 'Invalid Credentials!!';
-  constructor(private service: AuthenticationService, private router: Router) { }
+alertMessage='Invalid';
+
+  constructor(private service: AuthenticationService, private router: Router) {
+   
+   }
 
   ngOnInit(): void {
   }
 
-  public userLogin():any
+  public UserLogin()
   {
-   console.log(this.userName);
-   console.log(this.password);
-    const result=this.service.authenticateUser(this.userName,this.password);
+
+  const result=this.service.authenticateUser(this.userName,this.password);
     if(result===true)
     {
-      this.router.navigate(['about']);
+      this.router.navigate(['/employee']);
+    
     }
-
     else
     {
-      this.router.navigate(['customer']);
+      this.router.navigate(['switch']);
       return this.alertMessage;
+ 
+     
     }
   }
 }

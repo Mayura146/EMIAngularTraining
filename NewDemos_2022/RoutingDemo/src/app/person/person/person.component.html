@@ -1,0 +1,29 @@
+<p>person works!</p>
+
+<nav class="nav justify-content-center">
+  <a class="nav-link active" routerLink='details'>Person Details</a>
+  <a class="nav-link" routerLink='list'>Person List</a>
+
+</nav>
+<router-outlet></router-outlet>
+
+<table class="table table-bordered">
+  <thead>
+      <tr>
+          <th>Employee Id</th>
+          <th>Employee Name </th>
+          <th>Employee Location</th>
+          <th>Gender</th>
+         
+  </thead>
+  
+ <tbody>
+     <tr *ngFor="let cust of person">
+          <td>{{cust.id}}</td>
+          <td>{{cust.name|uppercase|initials:cust.gender}}</td>
+          <td>{{cust.location|titlecase}}</td>
+          <td>{{cust.gender}}</td>
+          
+     </tr>
+ </tbody>
+ </table>
