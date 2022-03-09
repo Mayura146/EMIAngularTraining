@@ -5,7 +5,7 @@ import { FormArrayComponent } from "./form-array/form-array.component";
 import { TemplateDeriveComponent } from "./template-derive/template-derive.component";
 
 const routes: Routes = [
-  { path: "", component: ReactiveFormComponent },
+  { path: "reactive", component: ReactiveFormComponent },
   { path: "array", component: FormArrayComponent },
   { path: "template", component: TemplateDeriveComponent },
 ];
