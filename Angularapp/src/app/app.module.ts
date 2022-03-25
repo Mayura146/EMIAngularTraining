@@ -15,6 +15,9 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { EmployeeDetailsComponent } from './Components/employee-details/employee-details.component';
 import { EmployeeInfoComponent } from './Components/employee-info/employee-info.component';
 import { RouteParameterComponent } from './Components/route-parameter/route-parameter.component';
+import { LoginComponent } from './Components/login/login.component';
+import { HomeComponent } from './Components/home/home.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 // @HostBinding
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { RouteParameterComponent } from './Components/route-parameter/route-para
     MenuComponent,
     EmployeeDetailsComponent,
     EmployeeInfoComponent,
-    RouteParameterComponent
+    RouteParameterComponent,
+    LoginComponent,
+    HomeComponent,
+    AboutUsComponent
            ],
   imports: [
     BrowserModule,
