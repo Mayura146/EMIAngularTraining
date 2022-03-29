@@ -15,7 +15,7 @@
 </li>
 <!-- Admin only -->
 <li class="nav-item" *ngIf="isAdmin">
-  <a class="nav-link" [routerLink]="['admin', 'employee']">Admin</a>
+  <a class="nav-link" [routerLink]="['admin', 'employee']">Employee Details</a>
 </li>
     <!-- Anonymous only -->
     <li class="nav-item" *ngIf="!isAuthorized">
@@ -29,8 +29,8 @@
   </ul>
 
   <span class="navbar-text">
-    <span class="badge badge-warning" *ngIf="isAuthorized">Authorized</span>
-    <span class="badge badge-danger" *ngIf="isAdmin">Admin</span>
+    <span class="badge badge-warning" *ngIf="isAuthorized"></span>
+    <span class="badge badge-danger" *ngIf="isAdmin"></span>
   </span>
 </header>
 
