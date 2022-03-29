@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'RoleRouting'`, () => {
+  it(`should have as title 'RouteGuard'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('RoleRouting');
+    expect(app.title).toEqual('RouteGuard');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('RoleRouting app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('RouteGuard app is running!');
   });
 });
