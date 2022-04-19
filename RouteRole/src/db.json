@@ -1,0 +1,14 @@
+{
+    "User":[
+        {
+            "username":"mayura",
+            "password":"mayura123",
+            "IsAdmin":true
+        },
+        {
+            "username":"Sam",
+            "password":"Sam123",
+            "IsAdmin":false
+        }
+    ]
+}
