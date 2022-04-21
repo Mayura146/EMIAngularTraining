@@ -8,7 +8,7 @@ import { BehaviorSubject, ReplaySubject } from 'rxjs';
 export class DesignService {
   exclusive = new Subject<boolean>();
   empName = new BehaviorSubject('Deeksha');
-  videoEmit = new ReplaySubject<string>(3,5000);
+  videoEmit = new ReplaySubject<string>(4,7000);
 
   // mysuject$=new Subject();
   constructor() { }

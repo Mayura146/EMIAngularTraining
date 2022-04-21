@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'about', component: AboutusComponent },
   {path:'replay',component:ReplaySubjectComponent},
   {path:'',redirectTo:'hello',pathMatch:'full'}
+  
 ];
 
 @NgModule({
